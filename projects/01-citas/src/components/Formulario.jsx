@@ -10,12 +10,58 @@ const Formulario = () => {
          </p>
 
          <form className='bg-white shadow-md rounded-lg py-10 px-5'>
-            <label className='block text-gray-700 uppercase font-bold' htmlFor='mascota'>Nombre Mascota</label>
+            <div className='mb-5'>
+               <label className='block text-gray-700 uppercase font-bold' htmlFor='mascota'>Nombre Mascota</label>
+               <input
+                  type='text'
+                  placeholder='Nombre de la Mascota'
+                  className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+                  id='mascota'
+               />
+            </div>
+
+            <div className='mb-5'>
+               <label className='block text-gray-700 uppercase font-bold' htmlFor='propietario'>Nombre Propietario</label>
+               <input
+                  type='text'
+                  placeholder='Nombre del Propietario'
+                  className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+                  id='propietario'
+               />
+            </div>
+
+            <div className='mb-5'>
+               <label className='block text-gray-700 uppercase font-bold' htmlFor='email'>Email</label>
+               <input
+                  type='email'
+                  placeholder='Email Contacto Propietario'
+                  className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+                  id='email'
+               />
+            </div>
+
+            <div className='mb-5'>
+               <label className='block text-gray-700 uppercase font-bold' htmlFor='alta'>Alta</label>
+               <input
+                  type='date'
+                  className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+                  id='alta'
+               />
+            </div>
+
+            <div className='mb-5'>
+               <label className='block text-gray-700 uppercase font-bold' htmlFor='sintomas'>Síntomas</label>
+               <textarea 
+                  id='sintomas' 
+                  placeholder='Describe los Síntomas'
+                  className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'  
+               />
+            </div>
+
             <input 
-               type='text'
-               placeholder='Nombre de la mascota'
-               className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
-               id='mascota'
+               type='submit'
+               className='bg-indigo-600 hover:bg-indigo-700 w-full p-3 text-white uppercase font-bold cursor-pointer transition-all'
+               value="Agregar Paciente" 
             />
          </form>
       </div>
