@@ -1,0 +1,5 @@
+/* agregamos estos paquetes de tailwindcss, y tiene q hacerse en el archivo global css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
