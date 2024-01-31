@@ -8,6 +8,11 @@ const Formulario = () => {
     */
    const [nombre, setNombre] = useState('')
 
+   // const handleSend = (e) => {
+   //    e.preventDefault()
+   //    setNombre(e.target.textContent)
+   // }
+
    return (
       <div className='md:w-1/2 lg:w-3/5'>
          <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes</h2>
@@ -25,6 +30,9 @@ const Formulario = () => {
                   placeholder='Nombre de la Mascota'
                   className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
                   id='mascota'
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)} // esto es un callback y como estamos trabajando en un Form, tenemos acceso a 'e' q es el evento de onChange, 
+                  // y ahí llamamos a la funcion modificadora setNombre() para que modifique la variable de estado 'nombre'
                />
             </div>
 
