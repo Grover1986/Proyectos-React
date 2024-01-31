@@ -1,5 +1,13 @@
+import { useState, useEffect } from "react"
 
 const Formulario = () => {
+   /**
+    *🗒️ Reglas de los Hooks
+    *👉 Los Hooks se colocan en la parte superior de los componentes
+    *👉 No se deben colocar dentro de condicionales, tampoco después de un return
+    */
+   const [nombre, setNombre] = useState('')
+
    return (
       <div className='md:w-1/2 lg:w-3/5'>
          <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes</h2>
